@@ -1,6 +1,7 @@
 import { FC, ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "../../layouts/Carousel";
+import { Recommendations } from "../../layouts/Recommendations";
 
 interface HomeProps extends ComponentPropsWithoutRef<"main"> {}
 
@@ -17,6 +18,57 @@ const categories = [
   { id: 9, title: "Toxumlar", url: "./seeds.png" },
   { id: 10, title: "Tomar və Turşular", url: "./tomato-pickles.png" },
   { id: 11, title: "Yağlar", url: "./oil.png" },
+];
+
+const recs = [
+  {
+    id: 0,
+    title: "Nehrə Yağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./nehre.png",
+  },
+  {
+    id: 1,
+    title: "Qaymaq",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./qaymaq.png",
+  },
+  {
+    id: 2,
+    title: "Kənd toyuğu",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./chicken.png",
+  },
+  {
+    id: 3,
+    title: "Camış qaymağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./camis-qaymaq.png",
+  },
+  {
+    id: 4,
+    title: "Bal",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./bal.png",
+  },
+  {
+    id: 5,
+    title: "Nehrə Yağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./chicken-2.png",
+  },
 ];
 
 const Home: FC<HomeProps> = ({ ...props }) => {
@@ -51,8 +103,11 @@ const Home: FC<HomeProps> = ({ ...props }) => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-7">
         <Carousel categories={categories} />
+      </section>
+      <section>
+        <Recommendations recs={recs} />
       </section>
     </main>
   );

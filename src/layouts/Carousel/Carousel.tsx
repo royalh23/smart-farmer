@@ -27,13 +27,13 @@ const Carousel: FC<CarouselProps> = ({ categories, ...props }) => {
 
   return (
     <div {...props} className="my-container">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mb-6">
         <div className="text-[32px] font-semibold">Kateqoriyalar</div>
         <div className="flex gap-2 text-[#00B207]">
           Hamısına bax <img src="./arrow.svg" alt="arrow" />
         </div>
       </div>
-      <div className="flex justify-between mt-6">
+      <div className="flex justify-between">
         {visibleCategories.map((category) => (
           <div
             key={category.id}
