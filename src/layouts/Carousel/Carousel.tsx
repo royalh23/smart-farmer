@@ -33,16 +33,18 @@ const Carousel: FC<CarouselProps> = ({ categories, ...props }) => {
           Hamısına bax <img src="./arrow.svg" alt="arrow" />
         </div>
       </div>
-      <div className="flex justify-between">
-        {visibleCategories.map((category) => (
-          <div
-            key={category.id}
-            className="flex flex-col items-center gap-4 py-4 bg-white rounded-md border-2 border-[#E6E6E6]"
-          >
-            <img src={category.url} alt={category.title} />
-            <div>{category.title}</div>
-          </div>
-        ))}
+      <div className="flex justify-center items-center">
+        <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-x-3 gap-y-4">
+          {visibleCategories.map((category) => (
+            <div
+              key={category.id}
+              className="flex flex-col items-center gap-4 py-5 bg-white rounded-md border-2 border-[#E6E6E6] max-w-72"
+            >
+              <img src={category.url} alt={category.title} />
+              <div>{category.title}</div>
+            </div>
+          ))}
+        </div>
       </div>
       <div className="flex justify-end gap-3 mt-3">
         <button

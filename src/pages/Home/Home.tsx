@@ -106,7 +106,7 @@ const Home: FC<HomeProps> = ({ ...props }) => {
       <section className="mb-7">
         <Carousel categories={categories} />
       </section>
-      <section>
+      <section className="mb-24">
         <Recommendations recs={recs} />
       </section>
     </main>
