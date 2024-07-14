@@ -38,12 +38,22 @@ const Header: FC<HeaderProps> = ({ ...props }) => {
             <div className="flex items-center justify-between mb-6">
               <img src="./smart-farmer.png" alt="logo" />
 
-              <form className="max-w-[487px] w-full flex flex-col">
-                <input
-                  className="rounded-lg bg-[#EFF1FB] py-3 px-4"
-                  placeholder="Axtarış"
-                  type="text"
-                />
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                }}
+                className="max-w-[487px] w-full flex flex-col"
+              >
+                <div className="flex relative">
+                  <input
+                    className="w-full rounded-lg bg-[#EFF1FB] py-3 px-4"
+                    placeholder="Axtarış"
+                    type="text"
+                  />
+                  <button type="submit" className="absolute top-2 right-4 p-1">
+                    <img src="./search.svg" alt="search" />
+                  </button>
+                </div>
               </form>
 
               <ul className="flex gap-6 items-center">
