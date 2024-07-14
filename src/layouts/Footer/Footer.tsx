@@ -104,7 +104,7 @@ const Footer: FC<FooterProps> = ({ ...props }) => {
       </div>
       <div className="bg-gray-900">
         <div className="my-container">
-          <div className="flex justify-between py-8 text-gray-500">
+          <div className="flex justify-between items-center py-8 text-gray-500">
             <div>Ecobazar eCommerce &#169; 2024. All Rights Reserved</div>
             <ul className="flex gap-2">
               <li>
