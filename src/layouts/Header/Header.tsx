@@ -35,7 +35,7 @@ const Header: FC<HeaderProps> = ({ ...props }) => {
       <div className="border border-[#D9D9D9] pt-4 pb-6">
         <div className="my-container">
           <div>
-            <div className="flex items-center justify-between mb-10">
+            <div className="flex items-center justify-between mb-6">
               <img src="./smart-farmer.png" alt="logo" />
 
               <form className="max-w-[487px] w-full flex flex-col">
