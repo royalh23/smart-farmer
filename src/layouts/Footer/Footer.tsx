@@ -7,7 +7,7 @@ const Footer: FC<FooterProps> = ({ ...props }) => {
   return (
     <footer {...props}>
       <div className="my-container">
-        <div className="flex justify-between">
+        <div className="flex justify-between py-10">
           <div className="flex flex-col gap-3.5 w-96">
             <img src="./smart-farmer.png" alt="logo" className="w-32" />
             <div className="text-gray-500">
@@ -97,6 +97,21 @@ const Footer: FC<FooterProps> = ({ ...props }) => {
               </li>
               <li>
                 <Link to={""}>Beauty & Health</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gray-900">
+        <div className="my-container">
+          <div className="flex justify-between py-8 text-gray-500">
+            <div>Ecobazar eCommerce &#169; 2024. All Rights Reserved</div>
+            <ul className="flex gap-2">
+              <li>
+                <img src="./visa.svg" alt="visa" />
+              </li>
+              <li>
+                <img src="./mastercard.svg" alt="master-card" />
               </li>
             </ul>
           </div>
