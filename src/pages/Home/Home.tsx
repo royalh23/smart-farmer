@@ -1,4 +1,4 @@
-import { FC, ComponentPropsWithoutRef, useEffect, useState } from "react";
+import { FC, ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "../../layouts/Carousel";
 import { Recommendations } from "../../layouts/Recommendations";
