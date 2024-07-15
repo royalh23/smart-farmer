@@ -36,7 +36,9 @@ const Header: FC<HeaderProps> = ({ ...props }) => {
         <div className="my-container">
           <div>
             <div className="flex items-center justify-between mb-6">
-              <img src="./smart-farmer.png" alt="logo" />
+              <Link to={"/"}>
+                <img src="./smart-farmer.png" alt="logo" />
+              </Link>
 
               <form
                 onSubmit={(e) => {

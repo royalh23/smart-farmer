@@ -1,4 +1,4 @@
-import { FC, ComponentPropsWithoutRef } from "react";
+import { FC, ComponentPropsWithoutRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Carousel } from "../../layouts/Carousel";
 import { Recommendations } from "../../layouts/Recommendations";
@@ -6,18 +6,18 @@ import { Recommendations } from "../../layouts/Recommendations";
 interface HomeProps extends ComponentPropsWithoutRef<"main"> {}
 
 const categories = [
-  { id: 0, title: "Meyvə", url: "./fruit.png" },
-  { id: 1, title: "Tərəvəz", url: "./vegetable.png" },
-  { id: 2, title: "Süd Məhsulları", url: "./dairy-products.png" },
-  { id: 3, title: "Ət & Balıq", url: "./fish-meat.png" },
-  { id: 4, title: "Kənd yumurtası", url: "./egg.png" },
-  { id: 5, title: "Bostan", url: "./garden.png" },
-  { id: 6, title: "Çərəzlər", url: "./nuts.png" },
-  { id: 7, title: "Dənli Bitkilər", url: "./plants.png" },
-  { id: 8, title: "Arı məhsulları", url: "./bee-products.png" },
-  { id: 9, title: "Toxumlar", url: "./seeds.png" },
-  { id: 10, title: "Tomar və Turşular", url: "./tomato-pickles.png" },
-  { id: 11, title: "Yağlar", url: "./oil.png" },
+  { id: 1, title: "Kənd yumurtası", url: "./egg.png" },
+  { id: 2, title: "Meyvə", url: "./fruit.png" },
+  { id: 3, title: "Tərəvəz", url: "./vegetable.png" },
+  { id: 4, title: "Süd Məhsulları", url: "./dairy-products.png" },
+  { id: 5, title: "Ət & Balıq", url: "./fish-meat.png" },
+  { id: 6, title: "Bostan", url: "./garden.png" },
+  { id: 7, title: "Çərəzlər", url: "./nuts.png" },
+  { id: 8, title: "Dənli Bitkilər", url: "./plants.png" },
+  { id: 9, title: "Arı məhsulları", url: "./bee-products.png" },
+  { id: 10, title: "Toxumlar", url: "./seeds.png" },
+  { id: 11, title: "Tomar və Turşular", url: "./tomato-pickles.png" },
+  { id: 12, title: "Yağlar", url: "./oil.png" },
 ];
 
 const recs = [
