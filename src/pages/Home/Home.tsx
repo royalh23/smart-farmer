@@ -1,7 +1,75 @@
 import { FC, ComponentPropsWithoutRef } from "react";
 import { Link } from "react-router-dom";
+import { Carousel } from "../../layouts/Carousel";
+import { Recommendations } from "../../layouts/Recommendations";
 
 interface HomeProps extends ComponentPropsWithoutRef<"main"> {}
+
+const categories = [
+  { id: 0, title: "Meyvə", url: "./fruit.png" },
+  { id: 1, title: "Tərəvəz", url: "./vegetable.png" },
+  { id: 2, title: "Süd Məhsulları", url: "./dairy-products.png" },
+  { id: 3, title: "Ət & Balıq", url: "./fish-meat.png" },
+  { id: 4, title: "Kənd yumurtası", url: "./egg.png" },
+  { id: 5, title: "Bostan", url: "./garden.png" },
+  { id: 6, title: "Çərəzlər", url: "./nuts.png" },
+  { id: 7, title: "Dənli Bitkilər", url: "./plants.png" },
+  { id: 8, title: "Arı məhsulları", url: "./bee-products.png" },
+  { id: 9, title: "Toxumlar", url: "./seeds.png" },
+  { id: 10, title: "Tomar və Turşular", url: "./tomato-pickles.png" },
+  { id: 11, title: "Yağlar", url: "./oil.png" },
+];
+
+const recs = [
+  {
+    id: 0,
+    title: "Nehrə Yağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./nehre.png",
+  },
+  {
+    id: 1,
+    title: "Qaymaq",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./qaymaq.png",
+  },
+  {
+    id: 2,
+    title: "Kənd toyuğu",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./chicken.png",
+  },
+  {
+    id: 3,
+    title: "Camış qaymağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./camis-qaymaq.png",
+  },
+  {
+    id: 4,
+    title: "Bal",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./bal.png",
+  },
+  {
+    id: 5,
+    title: "Nehrə Yağı",
+    price: 15,
+    inStock: true,
+    stars: 4,
+    url: "./chicken-2.png",
+  },
+];
 
 const Home: FC<HomeProps> = ({ ...props }) => {
   return (
@@ -34,6 +102,12 @@ const Home: FC<HomeProps> = ({ ...props }) => {
             </div>
           </div>
         </div>
+      </section>
+      <section className="mb-7">
+        <Carousel categories={categories} />
+      </section>
+      <section className="mb-24">
+        <Recommendations recs={recs} />
       </section>
     </main>
   );
