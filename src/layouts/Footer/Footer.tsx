@@ -32,73 +32,58 @@ const Footer: FC<FooterProps> = ({ ...props }) => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col justify-between">
-            <div className="font-bold">My Account</div>
-            <ul className="flex flex-col gap-3 text-gray-500">
-              <li>
-                <Link to={""}>My Account</Link>
-              </li>
-              <li>
-                <Link to={""}>Order History</Link>
-              </li>
-              <li>
-                <Link to={""}>Shopping Cart</Link>
-              </li>
-              <li>
-                <Link to={""}>Wishlist</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="font-bold">Helps</div>
-            <ul className="flex flex-col gap-3 text-gray-500">
-              <li>
-                <Link to={""}>Contact</Link>
-              </li>
-              <li>
-                <Link to={""}>Faqs</Link>
-              </li>
-              <li>
-                <Link to={""}>Terms & Condition</Link>
-              </li>
-              <li>
-                <Link to={""}>Privacy Policy</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="font-bold">Proxy</div>
-            <ul className="flex flex-col gap-3 text-gray-500">
-              <li>
-                <Link to={""}>About</Link>
-              </li>
-              <li>
-                <Link to={""}>Shop</Link>
-              </li>
-              <li>
-                <Link to={""}>Product</Link>
-              </li>
-              <li>
-                <Link to={""}>Track Order</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="flex flex-col justify-between">
-            <div className="font-bold">Categories</div>
-            <ul className="flex flex-col gap-3 text-gray-500">
-              <li>
-                <Link to={""}>Fruit & Vegetables</Link>
-              </li>
-              <li>
-                <Link to={""}>Meat & Fish</Link>
-              </li>
-              <li>
-                <Link to={""}>Bread & Bakery</Link>
-              </li>
-              <li>
-                <Link to={""}>Beauty & Health</Link>
-              </li>
-            </ul>
+          <div className="flex justify-between gap-20">
+            <div className="flex flex-col justify-between">
+              <div className="font-bold">Ana səhifə</div>
+              <ul className="flex flex-col gap-3 text-gray-500">
+                <li>
+                  <Link to={""}>Kateqoriyalar</Link>
+                </li>
+                <li>
+                  <Link to={""}>Hekayəmiz</Link>
+                </li>
+                <li>
+                  <Link to={""}>Məhsullar</Link>
+                </li>
+                <li>
+                  <Link to={""}>Fermerin əl kitabı</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col justify-between">
+              <div className="font-bold">Dəstək</div>
+              <ul className="flex flex-col gap-3 text-gray-500">
+                <li>
+                  <Link to={""}>Əlaqə</Link>
+                </li>
+                <li>
+                  <Link to={""}>Suallar</Link>
+                </li>
+                <li>
+                  <Link to={""}>Qaydalar & Şərt</Link>
+                </li>
+                <li>
+                  <Link to={""}>Gizlilik Siyasəti</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex flex-col justify-between">
+              <div className="font-bold">Kateqoriyalar</div>
+              <ul className="flex flex-col gap-3 text-gray-500">
+                <li>
+                  <Link to={""}>Meyvələr</Link>
+                </li>
+                <li>
+                  <Link to={""}>Tərəvəzlər</Link>
+                </li>
+                <li>
+                  <Link to={""}>Süd məhsulları</Link>
+                </li>
+                <li>
+                  <Link to={""}>Ət & balıq</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
